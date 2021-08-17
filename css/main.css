@@ -117,6 +117,10 @@ h1,h2,h3,h4,h5,h6,p,a{
     width: 35px;
     overflow: hidden;
     border-radius: 50%;
+    transition: 250ms;
+}
+.querro-link-wrapper:hover{
+    transform: translateY(-5px);
 }
 .querro-link-image{
     height: 35px;
