@@ -107,6 +107,22 @@ h1,h2,h3,h4,h5,h6,p,a{
     font-weight: 400;
 }
 /* #endregion */
+/* #region Link-Querro*/
+.querro-link-wrapper{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    top:-120px;
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.querro-link-image{
+    height: 35px;
+    width: 35px;
+}
+/* #endregion */
 /* #region Link-Section*/
 .link-section{
     height: auto;
@@ -229,6 +245,10 @@ h1,h2,h3,h4,h5,h6,p,a{
     }
     .link-item{
         width: 100%;
+    }
+    .querro-link-wrapper{
+        top: -80px;
+        padding: 0;
     }
 }
 @media screen and (max-width: 450px) {
