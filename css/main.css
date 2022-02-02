@@ -194,7 +194,7 @@ li{
     font-weight: bold;
     color: #007aaa;
     background-color: rgba(21, 21, 21, 0.5);
-    box-shadow: 0 2rem 2rem 0 rgb(0 0 0 / 25%);
+    box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 25%);
     user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
@@ -206,6 +206,7 @@ li{
 .skill-tabs label:hover{
     color: #00a1e0;
     transform: scale(1.05);
+    box-shadow: 0 0.5rem 0.5rem 0 rgb(0 0 0 / 25%);
 }
 .skill-tabs label:active{
     color: #7ddaff;
