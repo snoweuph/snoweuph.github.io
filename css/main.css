@@ -235,7 +235,7 @@ li{
 }
 .skill-item{
     aspect-ratio: 1 / 1;
-    background-color: rgba(37, 37, 37, 0.5);
+    background-color: #252525;
     box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 25%);
     border-radius: 1rem;
     padding: 1rem;
