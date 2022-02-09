@@ -215,19 +215,18 @@ li{
     background-color: #151515;
     order: 1;
     display: none;
-    --skill-tab-width:100%;
-    width: 100%;
     aspect-ratio: 5 / 2;
-}
-.skill-tabs input[type="radio"]:checked + label + .tab {
-    display: block;
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    padding: 1.5rem;
+    gap: 1.5rem;
     box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 25%);
     border-radius: 0.75rem;
     border-top-left-radius: 0;
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-    padding: 1.5rem;
+}
+.skill-tabs input[type="radio"]:checked + label + .tab {
+    display: grid;
 }
 .skill-tabs input[type="radio"]:checked + label {
     background-color: #151515;
@@ -242,8 +241,8 @@ li{
     transition-duration: 100ms;
 }
 .skill-item-image{
-    width: 60%;
     aspect-ratio: 1 / 1;
+    width: 60%;
     border-radius: 0.75rem;
     margin-bottom: 0.75rem;
     padding: 0;
@@ -406,6 +405,58 @@ li{
     .link-button-text{
         font-size: 1rem;
     }
+    #skills-and-knowledge-content-fields{
+        padding: 0.5rem;
+        width: fit-content;
+    }
+    .skill-tabs{
+        display: block;
+        flex-wrap: nowrap;
+        max-width: 1000px;
+        width: 100%;
+        padding: 1rem 0 2rem 0;
+    }
+    .skill-tabs label{
+        color: #00a1e0;
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 2rem;
+    }
+    .skill-tabs label:hover{
+        color: #00a1e0;
+        transform: scale(1);
+        box-shadow: none;
+    }
+    .skill-tabs label:active{
+        color: #00a1e0;
+    }
+    .skill-tabs input[type="radio"]:checked + label {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .skill-tabs .tab{
+        display: grid;
+        margin-bottom: 1rem;
+        margin-top: 0.25rem;
+        border-radius: 0.75rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .skill-tabs .tab{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+    .skill-tabs input[type="radio"]:checked + label + .tab {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .skill-item{
+        padding: 0.5rem;
+    }
+    .skill-item-image{
+        margin-bottom: 0.25rem;
+    }
+
 }
 @media screen and (max-width: 500px) {
     .nav_text{
@@ -423,6 +474,12 @@ li{
         width: 25vw;
         top: 15px;
         margin: 0 auto 25px auto;
+    }
+    .skill-tabs .tab{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skill-tabs input[type="radio"]:checked + label + .tab {
+        grid-template-columns: repeat(3, 1fr);
     }
     .link-item{
         height:15vw;
@@ -448,6 +505,15 @@ li{
         padding: 0;
         margin: 0;
         visibility: hidden;
+    }
+    .skill-tabs .tab{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skill-tabs input[type="radio"]:checked + label + .tab {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skill-item:hover{
+        transform: scale(1);
     }
 }
 /* #endregion*/
